@@ -1,0 +1,10 @@
+go 1.21.0
+
+use (
+	./develop/dev01
+	./develop/dev02
+	./develop/dev03
+	./pattern
+	./develop/dev08
+	./develop/dev11
+)

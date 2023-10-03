@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres
+    restart: always
+    container_name: psgl
+    environment:
+      POSTGRES_DB: "${PG_DATABASE}"
+      POSTGRES_USER: "${PG_USER}"
+      POSTGRES_PASSWORD: "${PG_PASSWORD}"
+    ports:
+      - "5432:5432"
+
+  nats-streaming:  
+    image: nats-streaming
+    restart: always
+    container_name: nats-streaming
+    ports:
+    - 4222:4222
+    - 8222:8222

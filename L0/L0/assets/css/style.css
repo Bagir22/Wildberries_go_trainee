@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 400 30px/20px 'Oxygen', serif;
+}
+
+.container {
+    margin: 100px 0 0 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+#input__label {
+    font: normal 400 30px/20px 'Oxygen', serif;
+}
+
+#input__uid {
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    padding: 0 20px 0 20px;
+}
+
+#info__name {
+    font: normal 400 30px/20px 'Oxygen', serif;
+    display: none;
+}
+
+#info__json {
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 600;
+}
